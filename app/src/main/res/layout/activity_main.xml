@@ -29,7 +29,7 @@
     <include layout="@layout/people_group_layout"/>
 
     <mk.kotlin.customviewassignment.views.components.SmartRecyclerView
-        android:id="@+id/rvNews"
+        android:id="@+id/people_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/list_item" />
