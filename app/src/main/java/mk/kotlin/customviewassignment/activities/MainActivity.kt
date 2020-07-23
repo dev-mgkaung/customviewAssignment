@@ -24,8 +24,16 @@ class MainActivity : BaseActivity() , MainView{
         setUpPresenter()
         setUpProgressBar()
         setUpRecyclerView()
+        setUpListeners()
         mPresenter.onUiReady(this)
 
+    }
+
+
+    private fun setUpListeners() {
+        addbtn.setOnClickListener {
+            mPresenter.onTapAddBtn()
+        }
     }
 
     private fun setUpPresenter() {
@@ -54,6 +62,10 @@ class MainActivity : BaseActivity() , MainView{
 
     override fun navigateToProfileScreen(id: Int, profileimage: ImageView) {
 
+    }
+
+    override fun navigateToCreateTask() {
+        startActivity(CreateTaskActivity.newIntent(this))
     }
 
 }

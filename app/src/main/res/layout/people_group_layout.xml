@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/three" />
 
     <mk.kotlin.customviewassignment.views.components.RoundedCornerImageView
-        android:id="@+id/roundedCornerImageView3"
+        android:id="@+id/addbtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="centerCrop"

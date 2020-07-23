@@ -14,7 +14,11 @@ class MainPresenterImpl : MainPresenter, BaseAppPresenterImpl<MainView>() {
     }
 
     override fun onTap(entity: PeopleEntity, profileImage: ImageView) {
-        TODO("Not yet implemented")
+
+    }
+
+    override fun onTapAddBtn() {
+        mView?.navigateToCreateTask()
     }
 
 
