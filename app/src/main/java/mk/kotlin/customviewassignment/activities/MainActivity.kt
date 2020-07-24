@@ -53,7 +53,6 @@ class MainActivity : BaseActivity() , MainView{
         val linearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         people_recyclerview.layoutManager = linearLayoutManager
         people_recyclerview.adapter = mAdapter
-
     }
 
     override fun displayPeopleList(list: List<PeopleEntity>) {

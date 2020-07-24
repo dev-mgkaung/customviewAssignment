@@ -39,19 +39,31 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <LinearLayout
+
+                    <include
+                        android:id="@+id/userviewpod"
+                        layout="@layout/view_pod_user_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <include layout="@layout/profile_message_layout" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:background="?attr/colorPrimary"
+                        android:minHeight="?attr/actionBarSize"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="@color/colorAccent"
+                        app:tabTextColor="#FFF" />
 
-                        <include
-                            android:id="@+id/userviewpod"
-                            layout="@layout/view_pod_user_data"
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp" />
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
-                        <include layout="@layout/profile_message_layout" />
-                    </LinearLayout>
                 </LinearLayout>
 
             </ScrollView>
