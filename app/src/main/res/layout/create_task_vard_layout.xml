@@ -128,12 +128,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.459" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-        >
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/button_background_green"
             android:padding="5dp"
             android:text="CREATE A TASK"
