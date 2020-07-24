@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.CreateTaskActivity"/>
+        <activity android:name=".activities.ProfileActivity" />
     </application>
 
 </manifest>

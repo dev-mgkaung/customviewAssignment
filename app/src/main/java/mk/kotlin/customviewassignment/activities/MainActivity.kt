@@ -60,8 +60,8 @@ class MainActivity : BaseActivity() , MainView{
         mAdapter.setNewData(list.toMutableList())
     }
 
-    override fun navigateToProfileScreen(id: Int, profileimage: ImageView) {
-
+    override fun navigateToProfileScreen() {
+        startActivity(ProfileActivity.newIntent(this))
     }
 
     override fun navigateToCreateTask() {

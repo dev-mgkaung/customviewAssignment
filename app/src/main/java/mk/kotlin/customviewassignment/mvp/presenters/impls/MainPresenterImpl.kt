@@ -14,7 +14,7 @@ class MainPresenterImpl : MainPresenter, BaseAppPresenterImpl<MainView>() {
     }
 
     override fun onTap(entity: PeopleEntity, profileImage: ImageView) {
-
+        mView?.navigateToProfileScreen()
     }
 
     override fun onTapAddBtn() {
