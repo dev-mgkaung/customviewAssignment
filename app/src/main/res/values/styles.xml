@@ -27,5 +27,4 @@
         <item name="android:textSize">@dimen/text_regular_2x</item>
     </style>
 
-
 </resources>
