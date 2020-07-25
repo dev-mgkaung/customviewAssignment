@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <mk.kotlin.customviewassignment.views.components.RoundedCornerImageView
-        android:id="@+id/roundedCornerImageView"
+        android:id="@+id/imageone"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/one" />
 
     <mk.kotlin.customviewassignment.views.components.RoundedCornerImageView
-        android:id="@+id/roundedCornerImageView2"
+        android:id="@+id/imagetwo"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="centerCrop"
@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/two" />
 
     <mk.kotlin.customviewassignment.views.components.RoundedCornerImageView
-        android:id="@+id/roundedCornerImageView4"
+        android:id="@+id/imagethree"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="centerCrop"

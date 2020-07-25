@@ -24,7 +24,7 @@ class PeopleViewHolder(itemView: View, private val mDelegate: PeopleListActionDe
         itemView.name.text = data.name
         itemView.title.text = data.title
         itemView.sharecount.text = data.shareCount.toString()
-        itemView.smscount.text = data.shareCount.toString()
+        itemView.smscount.text = data.messagecount.toString()
 
 //        Glide.with(itemView.imageitem)
 //            .load(data.imageurl)

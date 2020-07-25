@@ -8,6 +8,8 @@
 
 
     <declare-styleable name="CircularProgressBar">
+        <attr name="mAnimationDuration" format="dimension" />
+        <attr name="mStrokeWidth" format="dimension" />
         <attr name="progressColor" format="color" />
         <attr name="textColor" format="color" />
     </declare-styleable>
