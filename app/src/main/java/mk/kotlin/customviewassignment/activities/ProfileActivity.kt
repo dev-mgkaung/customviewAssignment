@@ -23,10 +23,15 @@ class ProfileActivity : BaseActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile_layout)
         setUpViewPod()
+        setUpListener()
         init()
     }
 
@@ -60,9 +65,13 @@ class ProfileActivity : BaseActivity() {
         }.attach()
     }
 
+    private fun setUpListener() {
+        closeimage.setOnClickListener { onBackPressed() }
+    }
+
     private fun setUpViewPod() {
         muserviewpod = userviewpod as UserDataViewPod
-        muserviewpod.setUserData("John Mr", "Ui Designer", "230", "233", "")
+        muserviewpod.setUserData("Zathary Butler", "Ui Designer", "230", "33", "")
         //userviewpod.setDelegate(mPresenter)
     }
 
