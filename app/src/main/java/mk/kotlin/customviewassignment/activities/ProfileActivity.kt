@@ -8,9 +8,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.profile_layout.*
 import mk.kotlin.customviewassignment.R
-import mk.kotlin.customviewassignment.activities.fragments.AboutYouFragment
-import mk.kotlin.customviewassignment.activities.fragments.ContactFragment
-import mk.kotlin.customviewassignment.activities.fragments.ProjectTaskFragment
+import mk.kotlin.customviewassignment.fragments.AboutYouFragment
+import mk.kotlin.customviewassignment.fragments.ContactFragment
+import mk.kotlin.customviewassignment.fragments.ProjectTaskFragment
 import mk.kotlin.customviewassignment.views.viewpods.UserDataViewPod
 
 class ProfileActivity : BaseActivity() {

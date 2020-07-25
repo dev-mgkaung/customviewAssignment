@@ -68,6 +68,8 @@
     <mk.kotlin.customviewassignment.views.components.CircularProgressBar
         android:layout_width="50dp"
         android:layout_height="50dp"
+        app:progressColor="@color/colorPrimary"
+        app:textColor="@color/colorPrimary"
         android:id="@+id/circularprogressbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

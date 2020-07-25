@@ -1,4 +1,4 @@
-package mk.kotlin.customviewassignment.activities.fragments
+package mk.kotlin.customviewassignment.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,19 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import mk.kotlin.customviewassignment.R
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.fragment_project_task.*
 import kotlinx.android.synthetic.main.fragment_project_task.view.*
 import mk.kotlin.customviewassignment.adapters.PeopleRecyclerAdapter
 import mk.kotlin.customviewassignment.datas.vos.PeopleEntity
 import mk.kotlin.customviewassignment.mvp.presenters.MainPresenter
+import mk.kotlin.customviewassignment.mvp.presenters.ProfilePresenter
 import mk.kotlin.customviewassignment.mvp.presenters.impls.MainPresenterImpl
-import mk.kotlin.customviewassignment.mvp.views.MainView
+import mk.kotlin.customviewassignment.mvp.presenters.impls.ProfilePresenterImpl
+import mk.kotlin.customviewassignment.mvp.views.ProfileView
 
 
-class ProjectTaskFragment : Fragment(), MainView {
+class ProjectTaskFragment : Fragment(), ProfileView {
 
     private lateinit var mAdapter: PeopleRecyclerAdapter
-    private lateinit var mPresenter: MainPresenter
+    private lateinit var mPresenter: ProfilePresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,7 @@ class ProjectTaskFragment : Fragment(), MainView {
 
 
     private fun setUpPresenter() {
-        mPresenter = MainPresenterImpl()
+        mPresenter = ProfilePresenterImpl()
         mPresenter.initPresenter(this)
     }
 

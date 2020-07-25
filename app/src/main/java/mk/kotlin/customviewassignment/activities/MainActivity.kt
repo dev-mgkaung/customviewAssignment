@@ -22,7 +22,6 @@ class MainActivity : BaseActivity() , MainView{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setUpPresenter()
-        setUpProgressBar()
         setUpRecyclerView()
         setUpListeners()
         mPresenter.onUiReady(this)
@@ -42,12 +41,6 @@ class MainActivity : BaseActivity() , MainView{
     }
 
 
-    private fun setUpProgressBar()
-    {
-        circularprogressbar.setProgressColor(getResources().getColor(R.color.colorPrimary));
-        circularprogressbar.setProgressWidth(10)
-        circularprogressbar.setProgress(80)
-    }
     private fun setUpRecyclerView() {
         mAdapter = PeopleRecyclerAdapter(mPresenter)
         val linearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

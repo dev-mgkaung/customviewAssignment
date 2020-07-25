@@ -6,4 +6,9 @@
         <attr name="border_color" format="color" />
     </declare-styleable>
 
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="progressColor" format="color" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
 </resources>

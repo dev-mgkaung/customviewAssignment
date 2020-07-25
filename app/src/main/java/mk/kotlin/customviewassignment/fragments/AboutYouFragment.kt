@@ -1,4 +1,4 @@
-package mk.kotlin.customviewassignment.activities.fragments
+package mk.kotlin.customviewassignment.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
